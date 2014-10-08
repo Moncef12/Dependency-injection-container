@@ -1,7 +1,7 @@
 Dependency injection container in PHP
 =====================================
 
-For now only simple constructors is possible.
+For now only simple constructors injection is possible.
 
 Todo
 ====
