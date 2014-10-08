@@ -1,0 +1,15 @@
+{
+	"name": "Moncef12/Sample_dependency_injector",
+    "type": "library",
+    "description": "A small dependency injector",
+    "keywords": ["dependency injector container"],
+    "homepage": "https://github.com/Moncef12/Sample_dependency_injector",
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+
+    "autoload": {
+    	"psr-4": { "DI\\": "lib/" }
+    }
+}
