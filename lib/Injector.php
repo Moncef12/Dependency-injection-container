@@ -42,19 +42,11 @@ class Injector
 	{
 		$r  = new ReflectionClass($className);
 		return $r->newInstanceArgs($objs_to_inject);
-		/*$objs_to_inject_names = array_keys($objs_to_inject);
-		foreach ($objs_to_inject_names as &$value) $value='$'.$value; 
-		extract($objs_to_inject);
-		$creation_statement .= 'new';
-		$creation_statement .= " $className(";
-		$creation_statement .= implode(',', $objs_to_inject_names);
-		$creation_statement .= ');';
-		return eval('return $creation_statement');*/
 	}	
 
 	/**
 	 * Will look in the constructor's block comment
-	 * for @inject  annotations, and then find what to inject and
+	 * for @inject annotations, and then find what to inject and
 	 * return them.
 	 * @param  String  Optional name of the class to look into it.
 	 * @return array|false.
@@ -67,6 +59,5 @@ class Injector
 			$r = $this->_reflection;
 		else
 			throw new Exception("No object provided to look into it");
-
 	}
 }
