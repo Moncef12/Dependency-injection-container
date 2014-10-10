@@ -1,33 +1,35 @@
 <?php 
 
-namespace DI\Tests\Exemples\ConstructorInject;
+namespace DI\Test\Exemples\ConstructorInject;
 
 class Person
 {
-	protected $_mobile;
+	public $cellphone;
 
 	/**
 	 * @inject
 	 */
 	public function __construct(CellPhone $cellphone)
 	{
-		$this->_mobile = $cellphone;	
+		$this->cellphone = $cellphone;	
 	}	
 }
 
 class CellPhone
 {
-	protected $_signal;
+	public $signal;
 
 	/**
 	 * @inject
 	 */
 	public function __construct(Signal $signal) {
-		$this->_signal = $foo;
+		$this->signal = $signal;
 	}
 }
 
 class Signal 	
 {
-	
+	public function __construct()
+	{
+	}
 }

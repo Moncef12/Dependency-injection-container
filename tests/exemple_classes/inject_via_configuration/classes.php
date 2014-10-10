@@ -1,6 +1,6 @@
 <?php 
 
-namespace DI\Tests\Exemples\ConfigInject;
+namespace DI\Test\Exemples\ConfigInject;
 
 
 class Person

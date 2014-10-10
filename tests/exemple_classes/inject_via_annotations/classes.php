@@ -1,6 +1,6 @@
 <?php 
 
-namespace DI\Tests\Exemples\AnnocationsInject;;
+namespace DI\Test\Exemples\AnnocationsInject;
 
 class Person
 {
@@ -29,5 +29,7 @@ class CellPhone
 
 class Signal 	
 {
-
+	public function __construct()
+	{
+	}
 }
