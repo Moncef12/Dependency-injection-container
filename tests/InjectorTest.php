@@ -52,11 +52,21 @@ class InjectorTest extends \PHPUnit_Framework_TestCase
 		);
 	}
 
+	/**
+	 * @todo : pass the test.
+	 */
+	public function testThatInjectionViaSimpleAnnotationWork($value='')
+	{
+		# code...
+	}
+
 	protected static function getNonPublicMethod($name) 
 	{
   		$class = new \ReflectionClass('\DI\Injector');
   		$method = $class->getMethod($name);
   		$method->setAccessible(true);
   		return $method;
-	}	
+	}
+
+
 }
